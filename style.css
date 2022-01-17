@@ -1,0 +1,25 @@
+/* Global */
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-paleblue: aliceblue;
+  --color-blue: #6daffe;
+  --color-darkblue: #437fc7;
+  --color-cyan: #0658bd;
+  --color-brown: #b9732f;
+  --color-black: black;
+
+  /* font size*/
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-reguglar: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* font weight*/
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400px;
+
+  /* size*/
+}
