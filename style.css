@@ -17,9 +17,9 @@
   --font-micro: 14px;
 
   /* font weight*/
-  --weight-bold: 700px;
-  --weight-semi-bold: 600px;
-  --weight-regular: 400px;
+  --weight-bold: 800;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 
   /* size*/
   --size-border-radius: 4px;
@@ -41,6 +41,12 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 /* typography */
 h1 {
@@ -102,5 +108,33 @@ p {
 
 .navbar_menu_items:hover {
   background-color: var(--color-cyan);
+  border-radius: var(--size-border-radius);
+}
+
+/* home */
+#home {
+  background-image: url('images/home-background.jpg');
+  background: center/cover no repeat;
+  padding: 40px;
+  text-align: center;
+  color: var(--color-paleblue);
+}
+.home_avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: var(--color-paleblue) solid 4px;
+}
+.home_title,
+.home_description {
+  color: var(--color-paleblue);
+}
+.home_button {
+  color: var(--color-paleblue);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-paleblue);
   border-radius: var(--size-border-radius);
 }
