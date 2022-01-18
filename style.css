@@ -3,6 +3,8 @@
   /* color */
   --color-white: #ffffff;
   --color-paleblue: aliceblue;
+  --color-skyblue: #9ec6f7;
+  --color-rainysky: #4b5e75;
   --color-blue: #6daffe;
   --color-darkblue: #437fc7;
   --color-cyan: #0658bd;
@@ -147,7 +149,13 @@ p {
 /* section common */
 .section {
   padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section_container {
   max-width: 1200px;
+  padding: 50px;
   text-align: center;
   margin: auto;
 }
@@ -211,4 +219,65 @@ p {
 }
 .job_description {
   font-size: var(--font-micro);
+}
+
+/* SKills */
+
+#skills {
+  background-color: var(--color-blue);
+}
+.skillset {
+  display: flex;
+  margin: 20px 0;
+}
+.skillset_left {
+  flex-basis: 60%;
+  position: relative;
+  background-color: var(--color-cyan);
+  color: var(--color-paleblue);
+  padding: 20px 40px;
+}
+.skillset_left_title {
+  font-size: var(--font-reguglar);
+  font-weight: var(--weight-regular);
+  color: var(--color-paleblue);
+}
+.skill_description {
+  font-size: var(--font-micro);
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillset_right {
+  flex-basis: 40%;
+  background-color: var(--color-darkblue);
+  color: var(--color-paleblue);
+  list-style-type: none;
+}
+.skillset_tools_title {
+  color: var(--color-paleblue);
+  font-size: var(--font-reguglar);
+  font-weight: var(--weight-regular);
+}
+.etc {
+  background-color: var(--color-skyblue);
+}
+.skillset_etc_title {
+  color: var(--color-paleblue);
+  font-size: var(--font-reguglar);
+  font-weight: var(--weight-regular);
+}
+.skill {
+  margin-bottom: 8px;
+}
+.skill_bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-rainysky);
+  margin-bottom: 8px;
+}
+.skill_value {
+  height: 3px;
+  background-color: var(--color-brown);
 }
