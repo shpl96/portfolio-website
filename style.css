@@ -412,3 +412,25 @@ p {
   color:var(--color-brown);
   font-weight: var(--weight-bold);
 }
+
+/* contact */
+#contact{
+  background-color: var(--color-brown);
+  margin: 40px 0px;
+}
+.contact_title{
+  color:var(--color-paleblue);
+}
+.contact_links{
+  font-size: var(--font-medium);
+  padding: 30px 0;
+}
+.contact_links i:hover{
+  transform: scale(1.5);
+  color: var(--color-darkblue);
+  transition: all 500ms ease-in;
+}
+
+.contact_rights{
+  color: var(--color-skyblue);
+}
