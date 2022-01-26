@@ -5,8 +5,8 @@ const navbar= document.querySelector('#navbar');
 const navbar_Height= navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', ()=> {
-    console.log(window.scrollY)
-    console.log(`narvar_Height: ${navbar_Height}`);
+    console.log(window.scrollY);
+    console.log(`navbar_Height: ${navbar_Height}`);
 
     if (window.scrollY > navbar_Height){
         navbar.classList.add('navbar--dark');
@@ -57,7 +57,6 @@ document.addEventListener('scroll', () => {
 // arrow button
 
 const arrowbtn= document.querySelector(".arrowbtn");
-// const navbar_Height= navbar.getBoundingClientRect().height;
 
 document.addEventListener("scroll", ()=> {
     if (homeHeight/2 < window.scrollY) {
@@ -68,7 +67,7 @@ document.addEventListener("scroll", ()=> {
 });
 
 arrowbtn.addEventListener("click", () => {
-    scrollIntoView('#navbar');
+    scrollIntoView('#home');
 });
 
 
