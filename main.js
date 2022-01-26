@@ -54,3 +54,21 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1- window.scrollY / homeHeight
 });
 
+// arrow button
+
+const arrowbtn= document.querySelector(".arrowbtn");
+// const navbar_Height= navbar.getBoundingClientRect().height;
+
+document.addEventListener("scroll", ()=> {
+    if (homeHeight/2 < window.scrollY) {
+        arrowbtn.classList.add('visible');
+    } else {
+        arrowbtn.classList.remove('visible');
+    }
+});
+
+arrowbtn.addEventListener("click", () => {
+    scrollIntoView('#navbar');
+});
+
+
