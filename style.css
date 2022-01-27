@@ -134,8 +134,8 @@ p {
 .navbar_toggle-button {
   color: var(--color-paleblue);
   position: absolute;
-  top: 24px;
-  right: 32px;
+  top: 15px;
+  right: 10px;
   font-size: 24px;
   display: none;
 }
@@ -509,12 +509,19 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-darkblue);
   }
   .navbar_menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+  }
+  .navbar_menu.open {
+    display: block;
+  }
+  .about_majors {
+    flex-direction: column;
   }
   .project {
     flex-grow: 1;

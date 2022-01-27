@@ -26,11 +26,20 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null){
         return;
     }
+    navbarMenu.classList.remove('open');
 
     console.log(event.target.dataset.link);
     scrollIntoView(link);
 
 });
+
+//navbar_toggle-button
+const navbarToggleBtn = document.querySelector('.navbar_toggle-button');
+
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 
 // contact me button
 
@@ -103,6 +112,5 @@ workBtnContainer.addEventListener( 'click', (e) => {
 
 const active= document.querySelector(".category_btn selected");
 active.classList.remove('selected');
-const target= 
-e.target.nodeName === 'BUTTON' ?  e.target : e.target.parentNode;
+const target = e.target.nodeName === 'BUTTON' ?  e.target : e.target.parentNode;
 target.classList.add('selected');
