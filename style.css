@@ -147,7 +147,7 @@ p {
   color: var(--color-paleblue);
 }
 .home_container {
-  padding: 50px;
+  padding: 30px;
 }
 .home_avatar {
   width: 250px;
@@ -357,6 +357,16 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all 500ms ease-out;
+}
+.project.invisible {
+  display: none;
+}
+
+.work_project.anim-out {
+  opacity: 0;
+  transform: scale(0.6) translateY(40px);
 }
 .project {
   width: 280px;
