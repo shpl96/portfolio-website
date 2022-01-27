@@ -5,8 +5,8 @@ const navbar= document.querySelector('#navbar');
 const navbar_Height= navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', ()=> {
-    // console.log(window.scrollY);
-    // console.log(`navbar_Height: ${navbar_Height}`);
+    console.log(window.scrollY);
+    console.log(`navbar_Height: ${navbar_Height}`);
 
     if (window.scrollY > navbar_Height){
         navbar.classList.add('navbar--dark');
@@ -98,3 +98,11 @@ workBtnContainer.addEventListener( 'click', (e) => {
     }, 300);
 
 });
+
+// Remove selection from the previous item and select the new clicked
+
+const active= document.querySelector(".category_btn selected");
+active.classList.remove('selected');
+const target= 
+e.target.nodeName === 'BUTTON' ?  e.target : e.target.parentNode;
+target.classList.add('selected');

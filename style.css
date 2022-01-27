@@ -116,16 +116,19 @@ p {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  border: 1px solid var(transparent);
+  border-radius: var(--size-border-radius);
 }
 
-.navbar_menu_items.active {
+/* .navbar_menu_items.active {
   border: 1px solid white;
   border-radius: var(--size-border-radius);
-}
+} */
 
 .navbar_menu_items:hover {
-  background-color: var(--color-cyan);
+  border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  background-color: var(--color-cyan);
 }
 
 .navbar_toggle-button {
@@ -141,7 +144,7 @@ p {
 #home {
   background-image: url('images/home-background.png');
   background: center/cover no repeat;
-  padding: 40px;
+  padding: 100px;
 
   text-align: center;
   color: var(--color-paleblue);
@@ -325,7 +328,7 @@ p {
   font-size: var(--font-reguglar);
   padding: 8px 48px;
 }
-.category_btn.active,
+.category_btn.selected,
 .category_btn:hover {
   background-color: var(--color-blue);
   border-radius: var(s--size-border-radius);
@@ -348,7 +351,7 @@ p {
   opacity: 0;
   transition: all 500ms ease-in;
 }
-.category_btn.active .category_count,
+.category_btn.selected .category_count,
 .category_btn:hover .category_count {
   opacity: 1;
   top: 0;
@@ -366,7 +369,7 @@ p {
 
 .work_project.anim-out {
   opacity: 0;
-  transform: scale(0.6) translateY(40px);
+  transform: scale(0.96) translateY(40px);
 }
 .project {
   width: 280px;
