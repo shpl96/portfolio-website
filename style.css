@@ -190,7 +190,7 @@ p {
 
 .about_majors {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 80px 0;
 }
 
@@ -517,9 +517,11 @@ p {
     width: 100%;
     display: none;
   }
+
   .navbar_menu.open {
     display: block;
   }
+
   .about_majors {
     flex-direction: column;
   }
